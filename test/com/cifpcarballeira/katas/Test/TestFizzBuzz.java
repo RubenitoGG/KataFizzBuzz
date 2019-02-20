@@ -24,32 +24,45 @@ public class TestFizzBuzz {
         String resultado = fb.getFizzBuzz(1);
         assertEquals("1", resultado);
     }
-    
+
     @Test
-    public void Test2devuelve2(){
+    public void Test2devuelve2() {
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(2);
         assertEquals("2", resultado);
     }
-    
+
     @Test
-    public void Test3devuelveFizz(){
+    public void Test3devuelveFizz() {
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(3);
         assertEquals("Fizz", resultado);
     }
-    
+
     @Test
-    public void Test5devuelveBuzz(){
+    public void Test5devuelveBuzz() {
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(5);
         assertEquals("Buzz", resultado);
     }
-    
+
     @Test
-    public void Test15devuelveFizzBuzz(){
+    public void Test15devuelveFizzBuzz() {
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(15);
         assertEquals("FizzBuzz", resultado);
+    }
+
+    @Test
+    public void Testdivisible5devuelveBuzz() {
+        FizzBuzz fb = new FizzBuzz();
+        String resultado = fb.getContieneFizzBuzz(10);
+        assertEquals("Buzz", resultado);
+    }
+
+    public void Testcontiene5devuelveBuzz() {
+        FizzBuzz fb = new FizzBuzz();
+        String resultado = fb.getContieneFizzBuzz(15);
+        assertEquals("Buzz", resultado);
     }
 }
