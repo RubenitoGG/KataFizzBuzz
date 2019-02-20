@@ -10,7 +10,7 @@ package com.cifpcarballeira.katas.FizzBuzz;
  * @author dam209
  */
 public class FizzBuzz {
-
+    
     public String getFizzBuzz(int i) {
         if (i % 3 == 0 && i % 5 == 0) {
             return "FizzBuzz";
@@ -28,10 +28,13 @@ public class FizzBuzz {
         String numero = i+"";
         if (i%3==0 || (numero.contains("3"))) {
             return "Fizz";
+        }if (i % 5 == 0 || numero.contains("5")) {
+            return "Buzz";
         }
+        return i + "";
         
-        return i+"";
     }
+
 
 }
 
