@@ -23,5 +23,15 @@ public class FizzBuzz {
         }
         return i + "";
     }
+    
+    public String getContieneFizzBuzz(int i){
+        String numero = i+"";
+        if (i%3==0 || (numero.contains("3"))) {
+            return "Fizz";
+        }
+        
+        return i+"";
+    }
 
 }
+
