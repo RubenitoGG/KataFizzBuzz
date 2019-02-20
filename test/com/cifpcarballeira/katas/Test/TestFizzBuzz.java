@@ -5,7 +5,7 @@ package com.cifpcarballeira.katas.Test;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import com.cifpcarballeira.katas.FizzBuzz.FizzBuzz;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -14,13 +14,14 @@ import static org.junit.Assert.*;
  * @author dam209
  */
 public class TestFizzBuzz {
-    
+
     public TestFizzBuzz() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void Test1devuelve1() {
+        FizzBuzz fb = new FizzBuzz();
+        String resultado = fb.getFizzBuzz(1);
+        assertEquals("1", resultado);
+    }
 }
