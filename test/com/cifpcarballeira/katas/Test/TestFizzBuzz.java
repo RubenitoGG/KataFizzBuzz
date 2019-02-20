@@ -33,16 +33,23 @@ public class TestFizzBuzz {
     }
     
     @Test
-    public void Divisible3devuelveFizz(){
+    public void Test3devuelveFizz(){
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(3);
         assertEquals("Fizz", resultado);
     }
     
     @Test
-    public void Divisible5devuelveBuzz(){
+    public void Test5devuelveBuzz(){
         FizzBuzz fb = new FizzBuzz();
         String resultado = fb.getFizzBuzz(5);
         assertEquals("Buzz", resultado);
+    }
+    
+    @Test
+    public void Test15devuelveFizzBuzz(){
+        FizzBuzz fb = new FizzBuzz();
+        String resultado = fb.getFizzBuzz(15);
+        assertEquals("FizzBuzz", resultado);
     }
 }
